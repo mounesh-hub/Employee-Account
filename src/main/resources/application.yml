@@ -1,0 +1,12 @@
+spring:
+  datasource:
+    url : jdbc:postgresql://localhost:5432/Hibernate
+    password : 123
+
+  profiles:
+    active: qa
+  cloud:
+    config:
+      uri: http://localhost:8888
+server.port: 4063
+spring.application.name: employee-account-service
